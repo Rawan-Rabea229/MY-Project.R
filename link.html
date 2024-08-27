@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .course-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .course-card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            position: relative;
+            height: 300px;
+        }
+        .course-card .card-image {
+            background-size: cover;
+            background-position: center;
+            height: 60%;
+            border-bottom: 1px solid #ddd;
+        }
+        .course-card .card-content {
+            padding: 10px;
+        }
+        .course-card h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+        }
+        .course-card p {
+            margin: 5px 0;
+            color: #777;
+        }
+        .course-card .course-count {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .search-container {
+            margin-top: 20px;
+            background-color: #e74c3c; /* خلفية حمراء */
+            padding: 20px;
+            border-radius: 8px;
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+        .search-container h1 {
+            color: #ffffff; /* نص أبيض */
+            margin-bottom: 20px;
+        }
+        .search-inner {
+            background-color: #ffffff; /* خلفية بيضاء للمستطيل الداخلي */
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .search-inner input[type="text"], .search-inner button {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .search-inner input[type="text"] {
+            width: 100%;
+        }
+        .search-inner .search-btn {
+            background-color: #e74c3c; /* خلفية حمراء */
+            color: #ffffff; /* نص أبيض */
+            border: none;
+            cursor: pointer;
+        }
+        .search-inner .search-btn:hover {
+            background-color: #c0392b; /* ظل أغمق عند التمرير */
+        }
+    </style>
+</head>
+<body>
+    <div class="course-grid">
+        <div class="course-card">
+            <div class="card-image" style="background-image: url('1.jpg');"></div>
+            <div class="card-content">
+                <h3>IT Development</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span class="course-count">120 Courses</span>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="card-image" style="background-image: url('2.jpg');"></div>
+            <div class="card-content">
+                <h3>Web Design</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span class="course-count">79 Courses</span>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="card-image" style="background-image: url('3.jpg');"></div>
+            <div class="card-content">
+                <h3>Illustration & Drawing</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span class="course-count">55 Courses</span>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="card-image" style="background-image: url('4.jpg');"></div>
+            <div class="card-content">
+                <h3>Social Media</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span class="course-count">40 Courses</span>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="card-image" style="background-image: url('5.jpg');"></div>
+            <div class="card-content">
+                <h3>Photoshop</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span class="course-count">220 Courses</span>
+            </div>
+        </div>
+        <div class="course-card">
+            <div class="card-image" style="background-image: url('6.jpg');"></div>
+            <div class="card-content">
+                <h3>Cryptocurrencies</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <span class="course-count">25 Courses</span>
+            </div>
+        </div>
+    </div>
+    <div class="search-container">
+        <h1>Search your course</h1>
+        <div class="search-inner">
+            <input type="text" placeholder="course" required>
+            <input type="text" placeholder="category" required>
+            <button class="search-btn">Search course</button>
+        </div>
+    </div>
+</body>
+</html>
